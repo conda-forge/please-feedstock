@@ -1,5 +1,5 @@
 {% set name = "please" %}
-{% set version = "17.12.5" %}
+{% set version = "17.12.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/thought-machine/please/archive/v{{ version }}.tar.gz
-  sha256: 6dfa58c6924517ad63fcaf75253048044e4e4d36b8ff1859746fcc627a29673f
+  sha256: c6690539ade3b0272ee7c95a33b311b888880b275e5504190d17db047374e8c1
 
 build:
   number: 0
