@@ -1,0 +1,38 @@
+schema_version: 1
+
+context:
+  version: 17.16.0
+
+package:
+  name: please
+  version: ${{ version }}
+
+source:
+  url: https://github.com/thought-machine/please/archive/v${{ version }}.tar.gz
+  sha256: adae52fab49f0c4e55bd1b42f2f6d9f202924f1a03b9a71a8d34b5865f09e6aa
+
+build:
+  number: 1
+  skip: win
+
+requirements:
+  build:
+    - ${{ compiler('go-nocgo') }}
+    - go-licenses
+
+tests:
+  - script:
+      - plz --help
+
+about:
+  license: Apache-2.0
+  license_file:
+    - LICENSE
+    - license-files/
+  summary: High-performance extensible build system for reproducible multi-language builds.
+  homepage: https://github.com/thought-machine/please
+  repository: https://github.com/thought-machine/please
+
+extra:
+  recipe-maintainers:
+    - danielnachun
