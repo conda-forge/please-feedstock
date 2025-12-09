@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "17.26.0"
+  version: "17.27.0"
 
 package:
   name: please
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/thought-machine/please/archive/v${{ version }}.tar.gz
-  sha256: be5f1abf96ff6260fdd3a854423b78c234ad2172e58a748fdf36b33f0619ec4d
+  sha256: 5e48c5c249d1eba7f2bdaa708f5b46fae0225ddd9dcd328cba37336838071483
 
 build:
   number: 0
